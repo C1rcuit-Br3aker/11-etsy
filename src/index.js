@@ -13,7 +13,13 @@
  *     (You will need more wrapping elements to style things)
  */
 function createResultShopItem(result) {
+  const itemOne = document.createElement(`article`);
+  itemOne.classList.add(`shop-item`);
+  itemOne.innerHTML =
+  `<h3 class="shop-item__title">${result.title}</h3>
+  <h4 class="shop-item__shop-name">${result.shop_name}</h4>`;
 
+  return itemOne;
 }
 
 /**
