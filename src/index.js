@@ -17,7 +17,9 @@ function createResultShopItem(result) {
   itemOne.classList.add(`shop-item`);
   itemOne.innerHTML =
   `<h3 class="shop-item__title">${result.title}</h3>
-  <h4 class="shop-item__shop-name">${result.shop_name}</h4>`;
+  <h4 class="shop-item__shop-name">${result.Shop.shop_name}</h4>
+  <img class="shop-item__pic" src="${result.Images[0].url_fullxfull}" alt="${result.title}">
+  <p class="shop-item__price">$${result.price}</p>`;
 
   return itemOne;
 }
