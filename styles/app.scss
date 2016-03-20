@@ -9,3 +9,23 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'grid';
 @import 'header';
 @import 'inputs';
+
+.header-nav {
+  background: $brand-white;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  margin: 0;
+  text-align: center;
+}
+
+.header-nav-list__item {
+  flex-grow: 1;
+}
+
+.shop-item__pic {
+  max-width: 10rem;
+}
