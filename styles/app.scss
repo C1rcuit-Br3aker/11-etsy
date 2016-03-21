@@ -10,32 +10,10 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 @import 'header';
 @import 'inputs';
 
-.header-nav {
-  background: $brand-white;
-}
-
-.header-nav-list {
-  display: flex;
-  align-items: center;
-  max-width: 70vw;
-  height: 3rem;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.header-nav-list__item {
-  flex-grow: 1;
-  line-height: 3rem;
-
-  &:hover {
-    border-bottom: 3px solid $brand-primary;
-  }
-
-}
-
-.list-item__text {
-  color: $brand-gray;
-  text-decoration: none;
+.color-select-item {
+  width: 1rem;
+  height: 1rem;
+  background-color: $brand-primary;
 }
 
 .shop-item__pic {

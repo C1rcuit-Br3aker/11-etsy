@@ -76,8 +76,101 @@
   <div class="content">
         <!--- LEFT SIDE ------>
     <div class="search-options">
-      <div class="search-options__results"></div>
-      <div class="search-options__refine"></div>
+      <div class="search-options__results">
+        <h4 class="results-title">Show results for:</h4>
+
+        <div class="results-container">
+          <ul class="results-list">
+            <span>All categories</span>
+            <li class="results-list-item">Home & Living</li>
+            <li class="results-list-item"> Paper & Party Supplies</li>
+          </ul>
+        </div>
+      </div>
+      <div class="refine-container">
+        <div class="search-options__refine">
+          <h4 class="search-option__refine-title">Refine your search</h4>
+          <div class="item-type-container">
+            <p class="item-type-title">Item Type</p>
+            <div class="item-type__list">
+              <label for="" class="item-type__list-item">
+                <input type="radio-custom" name = "item__type" class="list-item__button">
+                <a href="" class="list-item__button-label">All items</a>
+              </label>
+
+              <label for="" class="item-type__list-item">
+                <input type="radio-custom" name = "item__type" class="list-item__button">
+                <a href="" class="list-item__button-label">Handmade</a>
+              </label>
+
+              <label for="" class="item-type__list-item">
+                  <input type="radio-custom" name = "item__type" class="list-item__button">
+                  <a href="" class="list-item__button-label">Vintage</a>
+              </label>
+            </div>
+            <div class="item-list__price">
+              <h4 class="item-list__price-title">Price ($)</h4>
+              <div class="price-input__container">
+                <input type="text" class="price-input">
+                <p class="price-input__text">to</p>
+                <input type="text" class="price-input">
+                <button class="price-input__submit">
+                  <span class="fa fa-caret-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="filter-container">
+              <p class="filter-title">Filter by color</p>
+              <div class="filter-color-select">
+                <a href="" class="color-select-item red"></a>
+                <a href="" class="color-select-item orange"></a>
+                <a href="" class="color-select-item yellow"></a>
+                <a href="" class="color-select-item green"></a>
+                <a href="" class="color-select-item blue"></a>
+                <a href="" class="color-select-item purple"></a>
+                <a href="" class="color-select-item black"></a>
+                <a href="" class="color-select-item white"></a>
+              </div>
+            </div>
+            <div class="order-options__container">
+              <h4 class="order-options__title">Order options</h4>
+              <label for="" class="checkbox-options"><input type="checkbox" class="options-input-item">
+                <a href="" class="checkbox-label">Accepts Etsy gift cards</a>
+                </label>
+              <label for="" class="checkbox-options">
+                <input type="checkbox" class="options-input-item">
+                <a href="" class="checkbox-label">Customizable</a>
+              </label>
+            </div>
+            <div class="shop-location-container">
+              <h4 class="shop-location__title">Shop Location</h4>
+              <div class="shop-location__buttons">
+                <label for="" class="location-options">
+                  <input type="radio" class="shop-location__input">
+                  <a href="" class="location__input-label">Anywhere</a>
+                </label>
+                <label for="" class="location-options">
+                  <input type="radio" class="shop-location__input">
+                  <a href="" class="location__input-label">United States</a>
+                </label>
+                <a href="" class="location-choose">Chose a custom location</a>
+              </div>
+            </div>
+            <div class="shipping-container">
+              <h4 class="shipping-title">Ship to</h4>
+              <select name="ship_to" id="" class="ship-to">
+                <optgroup label="CHOOSE">
+                  <option value="US" selected = "selected">United States</option>
+                  <option value="GB">Great Britain</option>
+                  <option value="IR">Ireland</option>
+                  <option value="CA">Canada</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
 
       <!--RIGHT SIDE  -->
