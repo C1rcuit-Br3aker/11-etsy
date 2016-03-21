@@ -64,3 +64,16 @@ function searchEtsy(searchTerm, getData = fetchEtsy) {
     showAllResults(results);
   });
 }
+
+/**
+ * Tells the app when to start & connects the application to the DOM
+ */
+function start() {
+  searchEtsy(`Yoshi`);
+  // Lookup the search bar button element
+
+  // Listen for click on search button
+  // When clicked
+  //   * Look up value for search bar input
+  //   * Lookup results for search term and render results to the DOM
+}
