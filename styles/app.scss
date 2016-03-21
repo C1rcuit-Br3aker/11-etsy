@@ -13,9 +13,72 @@ $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
 .color-select-item {
   width: 1rem;
   height: 1rem;
-  background-color: $brand-primary;
+  background-color: $brand-light-blue;
+}
+
+.content {
+  display: flex;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.products-list {
+  width: 50%;
+  padding-left: 2rem;
 }
 
 .shop-item__pic {
-  max-width: 10rem;
+  width: 100%;
+}
+
+.shop-item {
+  width: calc(100% / 3);
+}
+
+
+.search-options__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 33%;
+
+}
+
+.results-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-options__results {
+  width: 50%;
+}
+
+.results-title {
+  margin-top: 2rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+}
+
+.results-list {
+  padding: 0.5rem 1rem;
+  border: 1px solid $brand-tan;
+  background: $brand-white;
+  line-height: 2rem;
+}
+
+.results-list-item {
+  padding-left: 1rem;
+}
+
+.refine-container {
+  width: 50%;
+}
+
+.item-type-container {
+  padding: 1rem;
+  border: 1px solid $brand-tan;
+  background: $brand-white;
 }

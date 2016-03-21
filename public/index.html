@@ -75,15 +75,15 @@
 
   <div class="content">
         <!--- LEFT SIDE ------>
-    <div class="search-options">
+    <div class="search-options__container">
       <div class="search-options__results">
-        <h4 class="results-title">Show results for:</h4>
+        <h5 class="results-title">Show results for:</h5>
 
         <div class="results-container">
           <ul class="results-list">
-            <span>All categories</span>
-            <li class="results-list-item">Home & Living</li>
-            <li class="results-list-item"> Paper & Party Supplies</li>
+            <span class="results-list-title">All categories</span>
+            <li class="results-list-item"><a href = "" alt = "">Home & Living</a></li>
+            <li class="results-list-item"><a href = "" alt = "">Paper & Party Supplies</a></li>
           </ul>
         </div>
       </div>
@@ -122,14 +122,16 @@
             <div class="filter-container">
               <p class="filter-title">Filter by color</p>
               <div class="filter-color-select">
-                <a href="" class="color-select-item red"></a>
-                <a href="" class="color-select-item orange"></a>
-                <a href="" class="color-select-item yellow"></a>
-                <a href="" class="color-select-item green"></a>
-                <a href="" class="color-select-item blue"></a>
-                <a href="" class="color-select-item purple"></a>
-                <a href="" class="color-select-item black"></a>
-                <a href="" class="color-select-item white"></a>
+                <ul class="color-select-list">
+                  <li class="color-select-item red"></li>
+                  <li class="color-select-item orange"></li>
+                  <li class="color-select-item yellow"></li>
+                  <li class="color-select-item green"></li>
+                  <li class="color-select-item blue"></li>
+                  <li class="color-select-item purple"></li>
+                  <li class="color-select-item black"></li>
+                  <li class="color-select-item white"></li>
+                </ul>
               </div>
             </div>
             <div class="order-options__container">
@@ -175,7 +177,7 @@
 
       <!--RIGHT SIDE  -->
     <div class="products-list">
-      <div id="products"></div>
+      <div class = "products" id="products"></div>
     </div>
   </div>
 
