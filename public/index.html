@@ -178,10 +178,25 @@
     </div>
 
       <!--RIGHT SIDE  -->
-    <div class="products-list">
-      <div class = "products" id="products"></div>
+    <div class="search-results__container">
+      <div class="products-results">
+        <a href="" class="categories">All categories</a>
+        <span class="search-term fa fa-caret-right">"Yoshi"(# of Results)</span>
+        <span class = "sort-by">Sort by:</span>
+        <select class="sort" name="sort">
+          <optgroup label="Sort By">
+            <option value="Rel" selected = "selected">Relevency</option>
+            <option value="MR">Most Recent</option>
+            <option value="HP">Highest Price</option>
+            <option value="LP">Lowest Price</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="products-list">
+        <div class = "products" id="products"></div>
+      </div>
+        </div>
     </div>
-  </div>
 
   <script src="/app.js" charset="utf-8"></script>
 
