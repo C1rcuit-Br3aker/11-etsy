@@ -20,9 +20,6 @@
   flex-wrap: wrap;
 }
 
-.products-list {
-}
-
 .shop-item {
   display: flex;
   flex-wrap: wrap;
@@ -59,4 +56,9 @@
 .shop-item__price {
   color: $brand-light-green;
   line-height: 1rem;
+}
+
+.page-select-button {
+  padding: 1rem;
+  font-size: 1rem;
 }
