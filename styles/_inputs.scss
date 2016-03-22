@@ -59,7 +59,7 @@ input {
 }
 
 .red {
-  background: #f40b32;
+  background: $brand-red;
 }
 
 .orange {
@@ -67,11 +67,11 @@ input {
 }
 
 .yellow {
-  background: #f3cc0c;
+  background: $brand-yellow;
 }
 
 .green {
-  background: #0ac20a;
+  background: $brand-green;
 }
 
 .blue {
@@ -79,9 +79,9 @@ input {
 }
 
 .purple {
-  background: #a60cf3;
+  background: $brand-purple;
 }
 
 .black {
-  background: #000;
+  background: $brand-black;
 }
