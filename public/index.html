@@ -92,29 +92,31 @@
           <h4 class="search-option__refine-title">Refine your search</h4>
           <div class="item-type-container">
             <p class="item-type-title">Item Type</p>
-            <div class="item-type__list">
-              <label for="" class="item-type__list-item">
-                <input type="radio-custom" name = "item__type" class="list-item__button">
-                <a href="" class="list-item__button-label">All items</a>
-              </label>
+            <div class="item-type__list-container">
+              <ul class="item-type__list">
+                <li for="" class="item-type__list-item">
+                  <input type="radio" name = "item__type" class="list-item__button">
+                  <a href="" class="list-item__button-label">All items</a>
+                </li>
 
-              <label for="" class="item-type__list-item">
-                <input type="radio-custom" name = "item__type" class="list-item__button">
-                <a href="" class="list-item__button-label">Handmade</a>
-              </label>
+                <li for="" class="item-type__list-item">
+                  <input type="radio" name = "item__type" class="list-item__button">
+                  <a href="" class="list-item__button-label">Handmade</a>
+                </li>
 
-              <label for="" class="item-type__list-item">
-                  <input type="radio-custom" name = "item__type" class="list-item__button">
-                  <a href="" class="list-item__button-label">Vintage</a>
-              </label>
+                <li for="" class="item-type__list-item">
+                    <input type="radio" name = "item__type" class="list-item__button">
+                    <a href="" class="list-item__button-label">Vintage</a>
+                </li>
+              </ul>
             </div>
             <div class="item-list__price">
               <h4 class="item-list__price-title">Price ($)</h4>
               <div class="price-input__container">
-                <input type="text" class="price-input">
-                <p class="price-input__text">to</p>
-                <input type="text" class="price-input">
-                <button class="price-input__submit">
+                <input type="text" class="price-input-item" placeholder="Low">
+                <p class="price-input-text text">to</p>
+                <input type="text" class="price-input-item" placeholder="High">
+                <button class="price-input-button submit">
                   <span class="fa fa-caret-right"></span>
                 </button>
               </div>
@@ -148,11 +150,11 @@
               <h4 class="shop-location__title">Shop Location</h4>
               <div class="shop-location__buttons">
                 <label for="" class="location-options">
-                  <input type="radio" class="shop-location__input">
+                  <input type="radio" name = "location__button" class="shop-location__input">
                   <a href="" class="location__input-label">Anywhere</a>
                 </label>
                 <label for="" class="location-options">
-                  <input type="radio" class="shop-location__input">
+                  <input type="radio" name = "location__button" class="shop-location__input">
                   <a href="" class="location__input-label">United States</a>
                 </label>
                 <a href="" class="location-choose">Chose a custom location</a>
