@@ -32,6 +32,7 @@
   display: flex;
   flex-wrap: wrap;
   width: calc(100% / 3 - 1.2rem);
+  min-width: 12rem;
   margin: 0 $gutter;
   margin-bottom: 1.5rem;
   background: $brand-white;
