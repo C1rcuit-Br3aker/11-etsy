@@ -85,3 +85,30 @@ input {
 .black {
   background: $brand-black;
 }
+
+.locale-button {
+  height: 2rem;
+  margin: 0;
+  border: 2px solid $brand-light-gray;
+  background: transparent;
+  color: $brand-gray;
+  font-size: 1.2rem;
+
+  &:hover {
+    background: $brand-light-blue;
+    color: $brand-light-blue;
+  }
+}
+
+.english {
+  border-right: 0;
+  border-left: 0;
+}
+
+.help {
+  margin-left: 1rem;
+  padding: 0.5rem 3rem;
+  border: 2px solid $brand-light-gray;
+  background: 0;
+  font-size: 1rem;
+}
