@@ -72,9 +72,17 @@ function searchEtsy(searchTerm, getData = fetchEtsy) {
 function start() {
   searchEtsy(`Yoshi`);
   // Lookup the search bar button element
-
+  const searchBtn = document.querySelector(`.input-addon__btn`);
   // Listen for click on search button
-  // When clicked
-  //   * Look up value for search bar input
-  //   * Lookup results for search term and render results to the DOM
+  searchBtn.addEventListener('click', (ev) => {
+    // When clicked
+    ev.preventDefault();
+    //   * Look up value for search bar input
+    const searchBar = document.querySelector(`.input-addon__input`).value;
+    //   * Lookup results for search term and render results to the DOM
+    return searchEtsy(searchBar).then(() => {
+      const x = document.querySelectorAll(`.shop-item`).length;
+      document.querySelector(`.search-term`).innerText = `"${searchBar}" (${x} results)`;
+    });
+  });
 }
