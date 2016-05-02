@@ -61,3 +61,32 @@
     font-size: 2rem;
   }
 }
+
+.header-nav {
+  background: $brand-white;
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  max-width: 70vw;
+  height: 3rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header-nav-list__item {
+  flex-grow: 1;
+  border-bottom: 3px solid transparent;
+  line-height: 3rem;
+
+  &:hover {
+    border-bottom: 3px solid $brand-primary;
+  }
+
+}
+
+.list-item__text {
+  color: $brand-gray;
+  text-decoration: none;
+}

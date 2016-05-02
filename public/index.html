@@ -44,14 +44,245 @@
       </div>
     </nav>
   </header>
+  <div class="header-nav">
+    <ul class="header-nav-list">
+      <li class="header-nav-list__item ">
+        <a href = "" alt = "" class = "list-item__text">Clothing & Accessories</a>
+      </li>
+      <li class="header-nav-list__item ">
+        <a href = "" alt = "" class = "list-item__text">Jewelry</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Craft Supplies & Tools</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Weddings</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Entertainment</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Home & Living</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Kids & Baby</a>
+      </li>
+      <li class="header-nav-list__item">
+        <a href = "" alt = "" class = "list-item__text">Vintage</a>
+      </li>
+    </ul>
+  </div>
 
-  <div id="products"></div>
+  <div class="content">
+        <!--- LEFT SIDE ------>
+    <div class="search-options__container">
+      <div class="search-options__results">
+        <h5 class="results-title">Show results for:</h5>
+
+        <div class="results-container">
+          <ul class="results-list">
+            <span class="results-list-title">All categories</span>
+            <li class="results-list-item"><a href = "" alt = "">Home & Living</a></li>
+            <li class="results-list-item"><a href = "" alt = "">Paper & Party Supplies</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="refine-container">
+        <div class="search-options__refine">
+          <h4 class="search-option__refine-title">Refine your search</h4>
+          <div class="item-type-container">
+            <p class="item-type-title">Item Type</p>
+            <div class="item-type__list-container">
+              <ul class="item-type__list">
+                <li for="" class="item-type__list-item">
+                  <input type="radio" name = "item__type" class="list-item__button">
+                  <a href="" class="list-item__button-label">All items</a>
+                </li>
+
+                <li for="" class="item-type__list-item">
+                  <input type="radio" name = "item__type" class="list-item__button">
+                  <a href="" class="list-item__button-label">Handmade</a>
+                </li>
+
+                <li for="" class="item-type__list-item">
+                    <input type="radio" name = "item__type" class="list-item__button">
+                    <a href="" class="list-item__button-label">Vintage</a>
+                </li>
+              </ul>
+            </div>
+            <div class="item-list__price">
+              <h4 class="item-list__price-title">Price ($)</h4>
+              <div class="price-input__container">
+                <input type="text" class="price-input-item" placeholder="Low">
+                <p class="price-input-text text">to</p>
+                <input type="text" class="price-input-item" placeholder="High">
+                <button class="price-input-button submit">
+                  <span class="fa fa-caret-right"></span>
+                </button>
+              </div>
+            </div>
+            <div class="filter-container">
+              <p class="filter-title">Filter by color</p>
+              <div class="filter-color-select">
+                <ul class="color-select-list">
+                  <li class="color-select-item red"></li>
+                  <li class="color-select-item orange"></li>
+                  <li class="color-select-item yellow"></li>
+                  <li class="color-select-item green"></li>
+                  <li class="color-select-item blue"></li>
+                  <li class="color-select-item purple"></li>
+                  <li class="color-select-item black"></li>
+                  <li class="color-select-item white"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="order-options__container">
+              <h4 class="order-options__title">Order options</h4>
+              <label for="" class="checkbox-options"><input type="checkbox" class="options-input-item">
+                <a href="" class="checkbox-label">Accepts Etsy gift cards</a>
+                </label>
+              <label for="" class="checkbox-options">
+                <input type="checkbox" class="options-input-item">
+                <a href="" class="checkbox-label">Customizable</a>
+              </label>
+            </div>
+            <div class="shop-location-container">
+              <h4 class="shop-location__title">Shop Location</h4>
+              <div class="shop-location__buttons">
+                <label for="" class="location-options">
+                  <input type="radio" name = "location__button" class="shop-location__input">
+                  <a href="" class="location__input-label">Anywhere</a>
+                </label>
+                <label for="" class="location-options">
+                  <input type="radio" name = "location__button" class="shop-location__input">
+                  <a href="" class="location__input-label">United States</a>
+                </label>
+                <a href="" class="location-choose">Chose a custom location</a>
+              </div>
+            </div>
+            <div class="shipping-container">
+              <h4 class="shipping-title">Ship to</h4>
+              <select name="ship_to" id="" class="ship-to">
+                <optgroup label="CHOOSE">
+                  <option value="US" selected = "selected">United States</option>
+                  <option value="GB">Great Britain</option>
+                  <option value="IR">Ireland</option>
+                  <option value="CA">Canada</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+      <!--RIGHT SIDE  -->
+    <div class="search-results__container">
+      <div class="products-results">
+        <a href="" class="categories">All categories</a>
+        <span class="search-term fa fa-caret-right">"Yoshi"(25 Results)</span>
+        <span class = "sort-by">Sort by:</span>
+        <select class="sort" name="sort">
+          <optgroup label="Sort By">
+            <option value="Rel" selected = "selected">Relevency</option>
+            <option value="MR">Most Recent</option>
+            <option value="HP">Highest Price</option>
+            <option value="LP">Lowest Price</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="products-list">
+        <div class = "products" id="products"></div>
+      </div>
+      <div class="page-seclect__container">
+        <button class="page-select-button">
+          <span class="fa fa-angle-left"></span>
+        </button>
+        <button class="page-select-button">
+          <a href="" class="page-number">1</a>
+        </button>
+        <button class="page-select-button">
+          <span class="fa fa-angle-right"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+      <!-- Start of FOOTER -->
+  <div class="footer__container">
+    <div class="subscribe__container">
+      <p class="subscribe-pitch">Get top trends and fresh editors'
+         picks in your inbox with Etsy Finds.</p>
+      <input type="text" class="subscribe-input" placeholder="Enter your email">
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+    <div class="footer-links__container">
+      <div class="footer__links">
+        <p class="footer__section-title">Turn your passion into a business</p>
+        <button class="open-shop">Open a shop</button>
+        <p class="footer__section-title">Sell on Etsy</p>
+        <a href="" class = "footer-link">Seller Handbook</a>
+        <a href="" class = "footer-link">Etsy credit card reader</a>
+        <a href="" class = "footer-link">Manufacturing</a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__section-title">Join the community</p>
+        <a href="" class = "footer-link">Terms</a>
+        <a href="" class = "footer-link">Forums</a>
+        <a href="" class = "footer-link">Upcoming events</a>
+        <a href="" class = "footer-link">Affiliates</a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__section-title">Discover and shop</p>
+        <a href="" class = "footer-link">Gift cards</a>
+        <a href="" class = "footer-link">Blog</a>
+        <a href="" class = "footer-link">Tastemakers</a>
+        <a href="" class = "footer-link">Mobile apps</a>
+        <a href="" class = "footer-link">Gift registies</a>
+        <a href="" class = "footer-link">Wholesale</a>
+        <a href="" class = "footer-link">Search</a>
+        <a href="" class = "footer-link">Editors' picks</a>
+      </div>
+      <div class="footer__links">
+        <p class="footer__section-title">Get to know us</p>
+        <a href="" class = "footer-link">About</a>
+        <a href="" class = "footer-link">Policies</a>
+        <a href="" class = "footer-link">Careers</a>
+        <a href="" class = "footer-link">Press</a>
+        <a href="" class = "footer-link">Developers</a>
+        <a href="" class = "footer-link">Investors</a>
+      </div>
+      <div class="footer__links">
+        <ul class="social-media">
+          <li class="social-media__link fa fa-facebook-square">Facebook</li>
+          <li class="social-media__link fa fa-twitter-square">Twitter</li>
+          <li class="social-media__link fa fa-pinterest">Pinterest</li>
+          <li class="social-media__link fa fa-instagram">Instagram</li>
+        </ul>
+      </div>
+    </div> <!-- footerlinks go inside this one -->
+    <div class="footer__locale">
+      <button class="locale-button fa fa-globe">United States</button>
+      <button class="locale-button english">English (US)</button>
+      <button class="locale-button fa fa-usd">USD</button>
+      <button class="help">Help</button>
+    </div>
+    <div class="legal">
+      <ul class="legal-list">
+        <li class="legal-items fa fa-copyright">2016 Etsy, Inc.</li>
+        <li class="legal-items">Legal</li>
+        <li class="legal-items">Privacy</li>
+        <li class="legal-items">Interest-based ads</li>
+      </ul>
+    </div>
+  </div>
 
   <script src="/app.js" charset="utf-8"></script>
 
   <script type="text/javascript">
     // Starts the application and searches for "Yoshi"
-    searchEtsy(`Yoshi`);
+    start();
   </script>
 </body>
 </html>

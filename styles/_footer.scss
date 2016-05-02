@@ -1,0 +1,91 @@
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid $brand-gray;
+}
+
+.subscribe__container {
+  width: 70rem;
+  margin-top: 2rem;
+  padding: 1.5rem 2rem;
+  border: 10px solid $brand-light-gray;
+  text-align: center;
+}
+
+.subscribe-pitch {
+  color: $brand-black;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.subscribe-input {
+  width: 20rem;
+  margin-right: 1rem;
+}
+
+.subscribe-button {
+  padding: 0.8rem 2.5rem;
+  border: 1px solid $brand-light-blue;
+  border-radius: 3px;
+  background: $brand-light-blue;
+  color: $brand-white;
+  font-size: 1rem;
+}
+
+.footer-links__container {
+  display: flex;
+  margin: 2rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid $brand-light-gray;
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  width: 14rem;
+  height: 20rem;
+}
+
+.footer__section-title {
+  margin-bottom: 0.5rem;
+}
+
+.footer-link {
+  padding: 0.5rem 0;
+}
+
+.open-shop {
+  width: 8rem;
+  padding: 0.5rem;
+  border: 0;
+  border-radius: 3px;
+  background: $brand-light-blue;
+  color: $brand-white;
+  font-size: 1rem;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+}
+
+.fa {
+  padding-right: 1rem;
+}
+
+.social-media__link {
+  padding: 0.5rem 0;
+}
+
+.footer__locale {
+  display: flex;
+}
+
+.legal-list {
+  display: flex;
+}
+
+.legal-items {
+  margin: 1rem 0.5rem;
+}

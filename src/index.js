@@ -13,7 +13,16 @@
  *     (You will need more wrapping elements to style things)
  */
 function createResultShopItem(result) {
+  const shopItem = document.createElement(`article`);
+  shopItem.classList.add(`shop-item`);
+  shopItem.innerHTML =
+  `<img class="shop-item__pic" src="${result.Images[0].url_fullxfull}" alt="${result.title}">
+  <div class="shop-item__info">
+  <h3 class="shop-item__title">${result.title}</h3>
+  <h4 class="shop-item__shop-name">${result.Shop.shop_name}</h4>
+  <p class="shop-item__price">$${result.price}</p></div>`;
 
+  return shopItem;
 }
 
 /**
@@ -28,16 +37,18 @@ function createResultShopItem(result) {
  */
 function showAllResults(response) {
   // Get the products element from the DOM
+  const products = document.querySelector(`#products`);
 
   // Clear the contents of the products element
-
+  products.innerHTML = ``;
   // Set 'items' to the results array from the response
-  const items = 2; // 2 is only here to stop an error
+  const items = response.results; // 2 is only here to stop an error
 
   for (let i = 0; i < items.length; i++) {
     // Create a new shop item element for each item in items
-
+    const shopItem = createResultShopItem(items[i]);
     // Append current shop item element to the products element
+    const itemsList = products.appendChild(shopItem);
   }
 }
 
@@ -52,5 +63,26 @@ function showAllResults(response) {
 function searchEtsy(searchTerm, getData = fetchEtsy) {
   return getData(searchTerm).then((results) => {
     showAllResults(results);
+  });
+}
+
+/**
+ * Tells the app when to start & connects the application to the DOM
+ */
+function start() {
+  searchEtsy(`Yoshi`);
+  // Lookup the search bar button element
+  const searchBtn = document.querySelector(`.input-addon__btn`);
+  // Listen for click on search button
+  searchBtn.addEventListener('click', (ev) => {
+    // When clicked
+    ev.preventDefault();
+    //   * Look up value for search bar input
+    const searchBar = document.querySelector(`.input-addon__input`).value;
+    //   * Lookup results for search term and render results to the DOM
+    return searchEtsy(searchBar).then(() => {
+      const x = document.querySelectorAll(`.shop-item`).length;
+      document.querySelector(`.search-term`).innerText = `"${searchBar}" (${x} results)`;
+    });
   });
 }
