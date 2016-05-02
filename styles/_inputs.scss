@@ -95,8 +95,7 @@ input {
   font-size: 1.2rem;
 
   &:hover {
-    background: $brand-light-blue;
-    color: $brand-light-blue;
+    background: lighten($brand-light-blue, 40);;
   }
 }
 

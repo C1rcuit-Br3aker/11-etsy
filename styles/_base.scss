@@ -23,3 +23,8 @@ a {
   color: $brand-light-blue;
   text-decoration: none;
 }
+
+*:before, *:after {
+  padding: 0.5rem;
+  box-sizing: inherit;
+}
